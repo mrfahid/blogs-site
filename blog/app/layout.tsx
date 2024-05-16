@@ -1,4 +1,5 @@
 import Navbar from "./components/Navbar";
+import { Footer } from "./components/Footer"
 import { Providers } from "./components/Providers";
 import "./globals.css";
 import { Inter } from "next/font/google";
@@ -25,6 +26,7 @@ export default function RootLayout({
           <main className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
             {children}
           </main>
+          <Footer />
         </Providers>
       </body>
     </html>
