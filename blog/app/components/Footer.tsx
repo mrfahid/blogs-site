@@ -1,17 +1,34 @@
-"use client"
-import { FooterBrand, FooterCopyright, FooterDivider, FooterIcon, FooterLink, FooterLinkGroup, FooterTitle } from "flowbite-react";
-import Link from "next/link";
+"use client";
+import {
+  FooterBrand,
+  FooterCopyright,
+  FooterDivider,
+  FooterIcon,
+  FooterLink,
+  FooterLinkGroup,
+  FooterTitle,
+} from "flowbite-react";
 // import { Footer } from "flowbite-react";
-import { BsDribbble, BsFacebook, BsGithub, BsInstagram, BsTwitter } from "react-icons/bs";
+import {
+  BsDribbble,
+  BsGithub,
+  BsInstagram,
+  BsTwitter,
+} from "react-icons/bs";
+
+interface FooterProps extends React.HTMLAttributes<HTMLDivElement> {
+  container?: boolean;
+}
 
 export function Footer() {
-  return (
-    <div container>
+  return ( 
+    <div>
       <div className="max-w-3xl mx-auto">
         <div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1">
           <div>
             <FooterBrand
               href="https://flowbite.com"
+              src="https://example.com/placeholder-image.jpg" 
               name="Shah Fahid"
             />
           </div>
@@ -26,7 +43,9 @@ export function Footer() {
             <div>
               <FooterTitle title="Follow us" />
               <FooterLinkGroup col>
-                <FooterLink href="https://github.com/mrfahid">Github</FooterLink>
+                <FooterLink href="https://github.com/mrfahid">
+                  Github
+                </FooterLink>
                 <FooterLink href="#">Discord</FooterLink>
               </FooterLinkGroup>
             </div>
