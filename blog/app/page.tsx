@@ -8,7 +8,7 @@ import { Card } from "@/components/ui/card";
 export const revalidate = 30
 
 async function getData() {
-  const query = `*[_type == "post"] | order(_createAt desc) {
+  const query = `*[_type == "post"] | order(_createdAt desc) {
     title,
       overview,
       slug,
