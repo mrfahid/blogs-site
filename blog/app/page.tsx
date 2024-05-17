@@ -5,6 +5,8 @@ import Image from "next/image";
 import { urlFor } from "./lib/sanityImageUrl";
 import { Card } from "@/components/ui/card";
 
+export const revalidate = 30
+
 async function getData() {
   const query = `*[_type == "post"] | order(_createAt desc) {
     title,
