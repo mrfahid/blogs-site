@@ -2,12 +2,12 @@ import { Post } from "@/app/lib/interface";
 import { client } from "@/app/lib/sanity";
 import { urlFor } from "@/app/lib/sanityImageUrl";
 import { PortableText } from "next-sanity";
-import Image from "next/image";
+import Image from "next/image"; 
 
 import { fullBlog } from "@/app/lib/interface";
 
 
-export const revalidate = 30; // revalidate at most 30 seconds
+export const revalidate = 30; 
 
 async function getData(slug: string) {
   const query = `
