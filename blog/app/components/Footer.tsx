@@ -33,7 +33,7 @@ export function Footer() {
             <div>
               <FooterTitle title="about" />
               <FooterLinkGroup col>
-                <FooterLink href="https://personal-portfolio-with-cms.vercel.app/" target="_blank">Shah Fahid</FooterLink>
+                <FooterLink href="https://shahfahid.vercel.app/" target="_blank">Shah Fahid</FooterLink>
                 <FooterLink href="shahfahidbaloch@gmail.com">Email</FooterLink>
               </FooterLinkGroup>
             </div>
