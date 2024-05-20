@@ -16,19 +16,16 @@ import {
   BsTwitter,
 } from "react-icons/bs";
 
-interface FooterProps extends React.HTMLAttributes<HTMLDivElement> {
-  container?: boolean;
-}
 
 export function Footer() {
   return ( 
-    <div>
+    <div className="">
       <div className="max-w-3xl mx-auto">
         <div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1">
           <div>
             <FooterBrand
-              href="https://flowbite.com"
-              src="https://example.com/placeholder-image.jpg" 
+              href="https://personal-portfolio-with-cms.vercel.app/"
+              src="" 
               name="Shah Fahid"
             />
           </div>
@@ -36,8 +33,8 @@ export function Footer() {
             <div>
               <FooterTitle title="about" />
               <FooterLinkGroup col>
-                <FooterLink href="#">Shah Fahid</FooterLink>
-                <FooterLink href="#">Tailwind CSS</FooterLink>
+                <FooterLink href="https://personal-portfolio-with-cms.vercel.app/" target="_blank">Shah Fahid</FooterLink>
+                <FooterLink href="shahfahidbaloch@gmail.com">Email</FooterLink>
               </FooterLinkGroup>
             </div>
             <div>
@@ -62,9 +59,9 @@ export function Footer() {
         <div className="w-full sm:flex sm:items-center sm:justify-between">
           <FooterCopyright href="#" by="ShahFahid™" year={2024} />
           <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
-            <FooterIcon href="#" icon={BsInstagram} />
-            <FooterIcon href="#" icon={BsTwitter} />
-            <FooterIcon href="#" icon={BsGithub} />
+            <FooterIcon href="https://www.instagram.com/mr_fahid.dev/" icon={BsInstagram} />
+            <FooterIcon href="https://x.com/PUBGLOVERS43297" icon={BsTwitter} />
+            <FooterIcon href="https://github.com/mrfahid" icon={BsGithub} />
             <FooterIcon href="#" icon={BsDribbble} />
           </div>
         </div>
