@@ -1,13 +1,11 @@
-import { Post } from "@/app/lib/interface";
 import { client } from "@/app/lib/sanity";
 import { urlFor } from "@/app/lib/sanityImageUrl";
 import { PortableText } from "next-sanity";
-import Image from "next/image"; 
+import Image from "next/image";
 
 import { fullBlog } from "@/app/lib/interface";
 
-
-export const revalidate = 30; 
+export const revalidate = 30;
 
 async function getData(slug: string) {
   const query = `
@@ -33,7 +31,7 @@ export default async function BlogArticle({
     <div className="mt-8">
       <h1>
         <span className="block text-base text-center text-primary font-semibold tracking-wide uppercase">
-          Jan Marshal - Blog
+          Shah Fahid - Blog
         </span>
         <span className="mt-2 block text-3xl text-center leading-8 font-bold tracking-tight sm:text-4xl">
           {data.title}
