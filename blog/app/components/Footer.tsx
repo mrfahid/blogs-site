@@ -29,7 +29,7 @@ export function Footer() {
               name="Shah Fahid"
             />
           </div>
-          <div className="grid grid-cols-2 gap-8 sm:mt-4 sm:grid-cols-3 sm:gap-6">
+          <div className="grid grid-cols-3 gap-8 sm:mt-3 sm:grid-cols-3 sm:gap-6">
             <div>
               <FooterTitle title="about" />
               <FooterLinkGroup col>
